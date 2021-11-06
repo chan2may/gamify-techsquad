@@ -71,7 +71,7 @@ nav img {
 
     grid-template-areas: 'nav nav nav profile';
 
-    position: absolute;
+    position: relative;
     right: 220px;
     top: -8px;
 
