@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Homepage</title>
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="head">
+        <!--Navigation bar-->
+        <nav>
+            <img src="images/myntra.png" width="100" height="50">
+            <ul>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">KIDS</a></li>
+                <li><a href="#">HOME & LIVING</a></li>
+                <li><a href="#">BEAUTY</a></li>
+                <li><a href="category.html">GAME-ZONE</a></li>
+    
+                <li class="search">
+                    <input id="search" type="search" placeholder=" &nbsp&nbsp Search for products brands and more">
+                    <span class="fa fa-search"></span>
+    
+                </li>
+                <li class="profile"><a href="#">
+                    <img src="images/profile.png" width="80" height="50"></a>
+                    <img src="images/wishlist.png" width="80" height="50"></a>
+                    <img src="images/bag.png" width="80" height="50"></a>
+    
+                </li>
+            </ul>
+        </nav>
+        <div id="offers">
+            <div class="offer1">
+                <img src="images/offer1.png" style="height: 500px ; width:300px ;">
+            </div>
+            <div class="offer2">
+                <img src="images/offer2.png" style="width:300px; height: 500px;">
+            </div>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Ads display -->
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/ad1.jpg" style="height: 500px ; width:600px ;">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/ad2.jpg" style="height: 500px ; width:600px ;">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/ad3.jpg" style="height: 500px ; width:600px ;">
+                    <div class="text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>

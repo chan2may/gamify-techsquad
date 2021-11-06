@@ -1,0 +1,200 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    line-height: 1.7rem;
+    
+
+}
+
+/*T.V show poster*/
+.poster {
+
+    position: relative;
+    left: 310px;
+}
+
+/*question number*/
+.Qno {
+
+    text-align: center;
+}
+
+.quiz-container {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(360deg, transparent, #d5f4fc);
+    text-shadow: 1px 1px white;
+    padding: 3rem;
+    text-shadow: 0 1px #00000010;
+    width: 60%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #000;
+    min-height: 80vh;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color: #00000050;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.question {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+.option {
+    padding: 5px;
+    color: #00000095;
+    background: #8ac5ca;
+    width: 400px;
+
+    border-radius: 25px;
+
+    transition: all 0.3s;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.option input:checked .option {
+    background: #08038c;
+    color: #000;
+}
+
+.option-grid {
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    text-align: left;
+position: relative;
+top: -20px;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.controls>* {
+    margin: 1rem;
+    position: relative;
+    top: -25px;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-weight: 300;
+    color: white;
+    outline: none;
+    transform: scale(0.98);
+    transition: all 0.2s;
+    
+}
+
+button.previous {
+    background: #c84630;
+}
+
+button.next {
+    background: #3c91e6;
+}
+
+button.restart {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    background: #0cf574;
+    color: #00000050;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.4s;
+    position: absolute;
+    left: 45%;
+    bottom: 1px;
+}
+
+button.restart:hover {
+    color: #00000098;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1);
+    font-weight: 500;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    min-height: 100vh;
+}
+
+.character {
+    color: #00000099;
+    position: absolute;
+    left: 30%;
+    top: 300px;
+    font-size: 60px;
+}
+
+.summary {
+    font-size: 1rem;
+    width: 400px;
+    height: 400px;
+    text-shadow: 1px 1px #ffffff50;
+    color: #00000099;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    display: flex;
+    position: absolute;
+    left: 40%;
+    bottom: 100px;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+div.character {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+
+div {
+text-align: center;
+}
+
+div.controls {
+
+    position: relative;
+    left:-12px ;
+    
+    
+}

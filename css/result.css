@@ -1,0 +1,198 @@
+
+ #topleft{
+    position: absolute;
+    top: 100px;
+    left: 70px;
+
+ }
+ #topright{
+    position: absolute;
+    top: 100px;
+    right: 760px;
+
+ }
+ #bottomleft{
+    position: absolute;
+    bottom: 200px;
+    left: 110px;
+
+ }
+ #bottomright{
+    position: absolute;
+    bottom: 200px;
+    right: 760px;
+
+ }
+ #name{
+    position: absolute;
+    bottom: 190px;
+    left: 230px;
+    font-size: 30px;
+    font-style:italic;
+    color: #354344;
+ }
+ #desc{
+    position: absolute;
+    top: 550px;
+    left: 230px;
+    text-align: left;
+    font-size: 30px;
+    font-style:inherit;
+    word-spacing: 10px;
+ }
+
+   
+ #outfit-container{
+    background-color: white ;
+    opacity: 0.7; 
+    width: 440px;
+    height: 560px;
+    position: absolute;
+    top: 130px;
+    right: 100px;
+    border-radius:25px;
+    
+
+ }
+ 
+ #head{
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    right: 180px;
+    font-size: 30px;
+    font-style:italic;
+    color: #354344;
+ }
+
+ .icon{
+
+   width: 30px;
+   height:30px;
+   position: absolute;
+   top: 625px;
+   right:360px;
+
+}
+
+
+ #outfit{
+    width: 280px;
+    height: 360px;
+    position: absolute;
+    top: 240px;
+    right: 182px;
+    display: flex;
+    margin: auto 0 auto;
+ }
+ #button{
+    position: absolute;
+   top: 615px;
+    right:203px;
+    width: 230px;
+    background-color: #da314d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+ }
+
+
+
+.character
+{
+   
+  width:250px;
+  height:250px;
+  margin:10px; 
+  background-size:cover;
+  position:absolute;
+  top: 200px;
+  left: 290px;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+
+  overflow:hidden;
+ font-family:'Roboto';
+  
+}
+.character img
+{
+ 
+  height:100%;
+ /* width:100%; */
+  transition: all 0.4s ease-out;
+}
+.outfit:hover img
+{
+box-shadow: 0px 35px 77px rgb(66, 66, 66) ;
+  transform:scale(1.05);
+  opacity: 0.7;
+}
+
+
+/* outfit animation */
+
+@media (max-width: 100%) {
+  .outfit{
+   flex-direction: column;
+    width:300px;
+  }
+}
+
+
+@keyframes cf3FadeInOut {
+   0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+/*button animation */
+
+@keyframes glowing {
+   0% {
+     background-color:  #da405a;
+     box-shadow: 0 0 5px #81052a;
+   }
+   50% {
+     background-color: #e43e62;
+     box-shadow: 0 0 20px #e43e62;
+   }
+   100% {
+     background-color: #a50e3b;
+     box-shadow: 0 0 5px #9e0835;
+   }
+ }
+ #button {
+   animation: glowing 1300ms infinite;
+ }
+
+ 
+/*firework animation*/
+
+ img #topleft, #topright , #bottomleft, #bottomright {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-direction: alternate;
+
+}
+img #toprigth,#topleft {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+animation-direction: alternate;
+}
