@@ -54,7 +54,7 @@ img:hover{
 }
 
 @media ( max-width: 1280px ) and ( min-width: 800px ) {
-    img.male { 
+    .male { 
         
     position:absolute;
     top:100pxpx;
@@ -66,5 +66,12 @@ img:hover{
     top: 100px;
     left:300px;
     
+    }
+    
+    h1{
+    text-align: center;
+    }
+    .container{
+    text-align: center;
     }
 }
