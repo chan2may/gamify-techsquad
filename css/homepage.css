@@ -172,5 +172,65 @@ nav img {
     }
     
   }
+
+ @media ( max-width: 1366px ) and ( min-width: 768px ) {
+    
+   
+    nav ul li a {
+       
+        padding: 0px 15px 0px;
+        
+    }
+    #search {
+        height: 23px;
+        width: 100px;
+        left: 80px;
+        position: relative;
+        top: -3px;
+        left: -50px;
+    }
+    .profile {
+
+        
+        position: relative;
+       left:890px;
+        top: -80px;
+        width: 60px;
+        height: 50px;
+    }
+
+   
+    
+    .offer1 {
+    
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 200px;
+        left: 28px;
+       
+    
+    }
+    .offer2 {
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 200px;
+        left: 400px;
+       
+    }
+    
+    .slideshow-container {
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 200px;
+        left: 341px;
+       
+    
+    }
+    
+     
+  }
  
 
