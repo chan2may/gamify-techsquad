@@ -117,4 +117,60 @@ nav img {
    
 
 }
+@media ( max-width: 1280px ) and ( min-width: 800px ) {
+    nav ul li a {
+       
+        padding: 0px 10px 0px;
+        
+    }
+    #search {
+        height: 33px;
+        width: 300px;
+        left: 80px;
+        position: relative;
+        top: -3px;
+        left: 20px;
+    }
+    .profile {
+
+        
+        position: relative;
+       left:890px;
+        top: -80px;
+        width: 60px;
+        height: 50px;
+    }
+
+   
+    
+    .offer1 {
+    
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 200px;
+        left: 28px;
+       
+    
+    }
+    .offer2 {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 100px;
+        left: 953px;
+       
+    }
+    
+    .slideshow-container {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 200px;
+        left: 341px;
+       
+    }
+    
+  }
+ 
 
